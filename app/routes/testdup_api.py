@@ -2,6 +2,7 @@ from fastapi import APIRouter
 from pydantic import BaseModel
 import httpx
 import os
+from app.utils.json_db import log_operation
 
 router = APIRouter()
 
@@ -29,4 +30,9 @@ async def translate(req: TranslationRequest):
     async with httpx.AsyncClient() as client:
         response = await client.post("https://api-free.deepl.com/v2/translate", data=data, headers=headers)
 
-    return response.json()
+    result = response.json()
+    log_operation(
+        {"text": req.text, "target_lang": req.target_lang, "source_lang": req.source_lang},
+        result
+    )
+    return result
