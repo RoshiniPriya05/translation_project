@@ -1,0 +1,66 @@
+[
+  {
+    "timestamp": "2025-07-22T12:45:03.731198",
+    "input": {
+      "text": "eat",
+      "target_lang": "DE",
+      "source_lang": null
+    },
+    "output": {
+      "translations": [
+        {
+          "detected_source_language": "EN",
+          "text": "essen"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-22T12:45:36.349929",
+    "input": {
+      "text": "HI",
+      "target_lang": "JA",
+      "source_lang": null
+    },
+    "output": {
+      "translations": [
+        {
+          "detected_source_language": "EN",
+          "text": "HI"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-22T12:45:51.615411",
+    "input": {
+      "text": "hello",
+      "target_lang": "JA",
+      "source_lang": null
+    },
+    "output": {
+      "translations": [
+        {
+          "detected_source_language": "NB",
+          "text": "\u3053\u3093\u306b\u3061\u308f"
+        }
+      ]
+    }
+  },
+  {
+    "timestamp": "2025-07-22T12:47:07.874480",
+    "input": {
+      "text": "hello",
+      "target_lang": "FR",
+      "source_lang": null
+    },
+    "output": {
+      "translations": [
+        {
+          "detected_source_language": "NB",
+          "text": "Bonjour"
+        }
+      ]
+    }
+  }
+]
